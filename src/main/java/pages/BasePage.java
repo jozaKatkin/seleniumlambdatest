@@ -1,19 +1,27 @@
 package pages;
 
-import driver.DriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
+import utils.Waiter;
 
 public abstract class BasePage {
 
-    public WebDriverWait waiter;
+    protected WebDriver driver;
+    protected Waiter waiter;
 
     public BasePage(WebDriver driver) {
+        this.driver = driver;
+        this.waiter = new Waiter(driver);
         PageFactory.initElements(driver, this);
-        this.waiter = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10));
     }
 
+    public String getCurrentUrl() {
+        return driver.getCurrentUrl();
+    }
+
+    protected void clickOn(WebElement element) {
+        waiter.waitForElementToBeClickable(element, 300)
+                .click();
+    }
 }

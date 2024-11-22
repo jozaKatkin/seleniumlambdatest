@@ -2,7 +2,7 @@ package driver;
 
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import utils.LambdaTestConfig;
+import config.LambdaTestConfig;
 
 public class ExplorerDriverFactory implements DriverFactory {
 

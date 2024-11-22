@@ -1,4 +1,4 @@
-package utils;
+package config;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static utils.PropertiesConfig.PROPERTIES_CONFIG;
+import static config.PropertiesConfig.PROPERTIES_CONFIG;
 
 public class LambdaTestConfig {
 
@@ -15,6 +15,7 @@ public class LambdaTestConfig {
                     "username", PROPERTIES_CONFIG.username(),
                     "accessKey", PROPERTIES_CONFIG.accessKey(),
                     "project", PROPERTIES_CONFIG.projectName(),
+                    "name", PROPERTIES_CONFIG.testName(),
                     "selenium_version", "4.26.0",
                     "w3c", true,
                     "visual", true,

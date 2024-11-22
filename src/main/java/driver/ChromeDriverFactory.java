@@ -2,13 +2,13 @@ package driver;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import utils.LambdaTestConfig;
+import config.LambdaTestConfig;
 
 public class ChromeDriverFactory implements DriverFactory {
 
     public RemoteWebDriver createDriver(String version, String platform) {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+//        options.addArguments("--headless");
         options.addArguments("--incognito");
         options.addArguments("--disable-extensions");
         options.addArguments("--disable-popup-blocking");

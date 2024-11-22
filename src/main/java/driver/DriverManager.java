@@ -2,7 +2,7 @@ package driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import utils.DriverConfig;
+import config.DriverConfig;
 
 import java.time.Duration;
 
@@ -12,7 +12,7 @@ public class DriverManager {
     private static final ThreadLocal<DriverConfig> threadLocalConfig = new ThreadLocal<>();
 
     public static void setDriverParameters(String browser, String version, String platform) {
-        DriverConfig driverConfig = new DriverConfig(version, platform, browser);
+        DriverConfig driverConfig = new DriverConfig(browser, version, platform);
         threadLocalConfig.set(driverConfig);
     }
 
@@ -31,7 +31,7 @@ public class DriverManager {
             default -> throw new IllegalStateException("Unexpected value: " + browser);
         }
         RemoteWebDriver driver = driverFactory.createDriver(version, platform);
-        setImplicitWait(driver, 5);
+        setImplicitWait(driver, 1);
         threadLocalDriver.set(driver);
     }
 

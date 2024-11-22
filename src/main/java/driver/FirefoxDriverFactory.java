@@ -2,7 +2,7 @@ package driver;
 
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import utils.LambdaTestConfig;
+import config.LambdaTestConfig;
 
 public class FirefoxDriverFactory implements DriverFactory{
 

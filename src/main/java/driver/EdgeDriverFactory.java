@@ -2,16 +2,17 @@ package driver;
 
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import utils.LambdaTestConfig;
+import config.LambdaTestConfig;
 
 public class EdgeDriverFactory implements DriverFactory {
 
     public RemoteWebDriver createDriver(String version, String platform) {
         EdgeOptions options = new EdgeOptions();
+//        options.addArguments("--start-maximized");
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--incognito");
         options.addArguments("--disable-extensions");
-        options.addArguments("--headless");
+//        options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.setBrowserVersion(version);
         options.setPlatformName(platform);

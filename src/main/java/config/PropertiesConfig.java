@@ -1,4 +1,4 @@
-package utils;
+package config;
 
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.ConfigFactory;
@@ -7,6 +7,9 @@ import org.aeonbits.owner.ConfigFactory;
 public interface PropertiesConfig extends Config {
 
     PropertiesConfig PROPERTIES_CONFIG = ConfigFactory.create(PropertiesConfig.class);
+
+    @Key("base.url")
+    String baseUrl();
 
     @Key("grid.url")
     String gridUrl();
@@ -19,4 +22,7 @@ public interface PropertiesConfig extends Config {
 
     @Key("project.name")
     String projectName();
+
+    @Key("test.name")
+    String testName();
 }
