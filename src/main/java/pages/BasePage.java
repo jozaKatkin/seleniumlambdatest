@@ -24,4 +24,13 @@ public abstract class BasePage {
         waiter.waitForElementToBeClickable(element, 300)
                 .click();
     }
+
+    protected String getTextOf(WebElement element) {
+        return waiter.waitForElementToBeVisible(element, 300)
+                .getText();
+    }
+
+    protected void enterTextIntoInput(WebElement input, String text) {
+        input.sendKeys(text);
+    }
 }

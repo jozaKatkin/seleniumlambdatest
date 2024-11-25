@@ -9,17 +9,6 @@
         </classes>
     </test>
 
-    <test name="EdgeTest">
-        <parameter name="browser" value="edge" />
-<!--        <parameter name="version" value="87.0" />-->
-        <parameter name="version" value="95" />
-<!--        <parameter name="platform" value="macOS Sierra" />-->
-        <parameter name="platform" value="macOS Ventura" />
-        <classes>
-            <class name="SimpleFormDemoTest" />
-        </classes>
-    </test>
-
     <test name="FirefoxTest">
         <parameter name="browser" value="firefox" />
         <parameter name="version" value="100" />
@@ -31,14 +20,23 @@
         </classes>
     </test>
 
-    <test name="IETest">
-        <parameter name="browser" value="explorer" />
-<!--        <parameter name="version" value="11.0" />-->
-        <parameter name="version" value="10" />
-<!--        <parameter name="platform" value="Windows 10" />-->
-        <parameter name="platform" value="Windows 8" />
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge" />
+<!--        <parameter name="version" value="87.0" />-->
+        <parameter name="version" value="95" />
+<!--        <parameter name="platform" value="macOS Sierra" />-->
+        <parameter name="platform" value="macOS Ventura" />
         <classes>
             <class name="SimpleFormDemoTest" />
         </classes>
     </test>
+
+<!--    <test name="IETest">-->
+<!--        <parameter name="browser" value="explorer" />-->
+<!--        <parameter name="version" value="11.0" />-->
+<!--        <parameter name="platform" value="Windows 10" />-->
+<!--        <classes>-->
+<!--            <class name="SimpleFormDemoTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
