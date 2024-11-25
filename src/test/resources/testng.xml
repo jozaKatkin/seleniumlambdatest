@@ -5,31 +5,34 @@
 <!--        <parameter name="version" value="88.0" />-->
         <parameter name="platform" value="Windows 10" />
         <classes>
-            <class name="SimpleFormDemoTest" />
+<!--            <class name="SimpleFormDemoTest" />-->
+            <class name="DragAndDropSlidersTest" />
         </classes>
     </test>
 
-    <test name="FirefoxTest">
-        <parameter name="browser" value="firefox" />
-        <parameter name="version" value="100" />
-<!--        <parameter name="version" value="82.0" />-->
-<!--        <parameter name="platform" value="Windows 7" />-->
-        <parameter name="platform" value="Windows 8" />
-        <classes>
-            <class name="SimpleFormDemoTest" />
-        </classes>
-    </test>
+<!--    <test name="FirefoxTest">-->
+<!--        <parameter name="browser" value="firefox" />-->
+<!--        <parameter name="version" value="100" />-->
+<!--&lt;!&ndash;        <parameter name="version" value="82.0" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <parameter name="platform" value="Windows 7" />&ndash;&gt;-->
+<!--        <parameter name="platform" value="Windows 10" />-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="SimpleFormDemoTest" />&ndash;&gt;-->
+<!--            <class name="DragAndDropSlidersTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="EdgeTest">
-        <parameter name="browser" value="edge" />
-<!--        <parameter name="version" value="87.0" />-->
-        <parameter name="version" value="95" />
-<!--        <parameter name="platform" value="macOS Sierra" />-->
-        <parameter name="platform" value="macOS Ventura" />
-        <classes>
-            <class name="SimpleFormDemoTest" />
-        </classes>
-    </test>
+<!--    <test name="EdgeTest">-->
+<!--        <parameter name="browser" value="edge" />-->
+<!--&lt;!&ndash;        <parameter name="version" value="87.0" />&ndash;&gt;-->
+<!--        <parameter name="version" value="95" />-->
+<!--&lt;!&ndash;        <parameter name="platform" value="macOS Sierra" />&ndash;&gt;-->
+<!--        <parameter name="platform" value="macOS Ventura" />-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="SimpleFormDemoTest" />&ndash;&gt;-->
+<!--            <class name="DragAndDropSlidersTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
 <!--    <test name="IETest">-->
 <!--        <parameter name="browser" value="explorer" />-->

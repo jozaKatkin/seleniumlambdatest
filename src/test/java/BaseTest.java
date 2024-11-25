@@ -2,11 +2,13 @@ import driver.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
+import utils.CustomTestListener;
 
 import static config.PropertiesConfig.PROPERTIES_CONFIG;
 
-
+@Listeners(CustomTestListener.class)
 public abstract class BaseTest {
     protected WebDriver driver;
 

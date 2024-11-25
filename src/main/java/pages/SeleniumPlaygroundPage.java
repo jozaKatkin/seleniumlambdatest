@@ -17,8 +17,15 @@ public class SeleniumPlaygroundPage extends BasePage {
     @FindBy(xpath = "//a[contains(@href, 'simple-form-demo')]")
     private WebElement simpleFormDemoLinkElement;
 
+    @FindBy(xpath = "//a[contains(@href, 'drag-drop-range')]")
+    private WebElement dragAndDropSlidersLinkElement;
+
     public void clickSimpleFormDemoLink() {
         clickOn(simpleFormDemoLinkElement);
+    }
+
+    public void clickDragAndDropSlidersLink() {
+        clickOn(dragAndDropSlidersLinkElement);
     }
 
     public void clickOnAllowAllButtonIfExists() {
