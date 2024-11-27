@@ -13,6 +13,7 @@ public class DragAndDropSlidersTest extends BaseTest {
 
         seleniumPlaygroundPage.clickDragAndDropSlidersLink();
         DragAndDropSlidersPage dragAndDropSlidersPage = new DragAndDropSlidersPage(driver);
+        dragAndDropSlidersPage.clickOnAllowAllButtonIfExists();
 
         dragAndDropSlidersPage.moveSliderTo95();
         Assert.assertEquals(

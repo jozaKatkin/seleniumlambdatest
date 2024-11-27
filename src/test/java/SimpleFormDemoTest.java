@@ -18,6 +18,7 @@ public class SimpleFormDemoTest extends BaseTest {
         seleniumPlaygroundPage.clickSimpleFormDemoLink();
 
         SimpleFormDemoPage simpleFormDemoPage = new SimpleFormDemoPage(driver);
+        simpleFormDemoPage.clickOnAllowAllButtonIfExists();
         Assert.assertTrue(
                 simpleFormDemoPage.getCurrentUrl().contains(CORRECT_SIMPLE_FORM_DEMO_URL.getValue()),
                 String.format("URL does not contain %s", CORRECT_SIMPLE_FORM_DEMO_URL.getValue())

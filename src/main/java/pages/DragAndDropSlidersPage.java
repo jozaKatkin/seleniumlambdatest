@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,11 +22,32 @@ public class DragAndDropSlidersPage extends BasePage implements ILogger {
     }
 
     public void moveSliderToValue(int targetValue) {
-        //ToDo
+
+        clickOn(defaultValue15Slider);
+
+        int counter = 0;
+        int currentSliderValue = getCurrentSliderValue();
+
+        while (true) {
+            if (currentSliderValue == targetValue) {
+                log().info("Target value reached: " + targetValue);
+                break;
+            }
+
+            if (currentSliderValue < targetValue) {
+                defaultValue15Slider.sendKeys(Keys.ARROW_RIGHT);
+            } else {
+                defaultValue15Slider.sendKeys(Keys.ARROW_LEFT);
+            }
+
+            counter++;
+            log().info("Counter: " + counter);
+            currentSliderValue = getCurrentSliderValue();
+        }
     }
 
     public void moveSliderTo95() {
-        int targetValue = 45;
+        int targetValue = 95;
         moveSliderToValue(targetValue);
     }
 }
