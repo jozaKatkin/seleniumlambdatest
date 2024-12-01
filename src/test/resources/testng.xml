@@ -2,43 +2,43 @@
     <test name="ChromeTest">
         <parameter name="browser" value="chrome" />
         <parameter name="version" value="95" />
-<!--        <parameter name="version" value="88.0" />-->
         <parameter name="platform" value="Windows 10" />
         <classes>
             <class name="SimpleFormDemoTest" />
-        </classes>
-    </test>
-
-    <test name="EdgeTest">
-        <parameter name="browser" value="edge" />
-<!--        <parameter name="version" value="87.0" />-->
-        <parameter name="version" value="95" />
-<!--        <parameter name="platform" value="macOS Sierra" />-->
-        <parameter name="platform" value="macOS Ventura" />
-        <classes>
-            <class name="SimpleFormDemoTest" />
+            <class name="DragAndDropSlidersTest" />
+            <class name="InputFormSubmitTest" />
         </classes>
     </test>
 
     <test name="FirefoxTest">
         <parameter name="browser" value="firefox" />
         <parameter name="version" value="100" />
-<!--        <parameter name="version" value="82.0" />-->
-<!--        <parameter name="platform" value="Windows 7" />-->
-        <parameter name="platform" value="Windows 8" />
+        <parameter name="platform" value="Windows 10" />
         <classes>
             <class name="SimpleFormDemoTest" />
+            <class name="DragAndDropSlidersTest" />
+            <class name="InputFormSubmitTest" />
         </classes>
     </test>
 
-    <test name="IETest">
-        <parameter name="browser" value="explorer" />
-<!--        <parameter name="version" value="11.0" />-->
-        <parameter name="version" value="10" />
-<!--        <parameter name="platform" value="Windows 10" />-->
-        <parameter name="platform" value="Windows 8" />
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge" />
+        <parameter name="version" value="95" />
+<!--        <parameter name="platform" value="macOS Sierra" />-->
+        <parameter name="platform" value="macOS Ventura" />
         <classes>
             <class name="SimpleFormDemoTest" />
+            <class name="DragAndDropSlidersTest" />
+            <class name="InputFormSubmitTest" />
         </classes>
     </test>
+
+<!--    <test name="IETest">-->
+<!--        <parameter name="browser" value="explorer" />-->
+<!--        <parameter name="version" value="11.0" />-->
+<!--        <parameter name="platform" value="Windows 10" />-->
+<!--        <classes>-->
+<!--            <class name="SimpleFormDemoTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

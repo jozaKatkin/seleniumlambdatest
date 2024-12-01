@@ -8,7 +8,7 @@ public class ChromeDriverFactory implements DriverFactory {
 
     public RemoteWebDriver createDriver(String version, String platform) {
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless");
+        options.addArguments("--start-maximized");
         options.addArguments("--incognito");
         options.addArguments("--disable-extensions");
         options.addArguments("--disable-popup-blocking");

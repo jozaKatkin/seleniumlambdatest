@@ -7,3 +7,7 @@ target/
 .idea/
 
 src/main/resources/config.properties
+
+/.allure/
+
+/logs/
